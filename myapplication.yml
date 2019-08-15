@@ -1,8 +1,5 @@
 #公共的部分
 spring:
-  profiles: server-provide
-    
-spring:
   application:
     name: server-provide
     
