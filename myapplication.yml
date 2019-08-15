@@ -1,13 +1,11 @@
 #公共的部分
 spring:
-    profiles: server-provide
+  profiles: server-provide
     
-#应用名称 --搭集群的时候名称必须一样，名称不一样eureka会认为是两个不同的提供者
 spring:
   application:
     name: server-provide
     
-#配置当前的服务注册中心地址
 eureka:
   client:
     service-url:
@@ -15,12 +13,11 @@ eureka:
 
 ---
 spring:
-    profiles: provide1
+  profiles: provide1
     
 server:
   port: 9090
 
-  #配置显示的链接
 eureka:  
   instance:
     instance-id: provide9090
@@ -28,11 +25,11 @@ eureka:
 
 ---
 spring:
-    profiles: provide2
+  profiles: provide2
     
 server:
   port: 9091
-  #配置显示的链接
+
 eureka:
   instance:
     instance-id: provide9091
